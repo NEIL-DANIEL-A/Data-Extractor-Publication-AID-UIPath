@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>845.6,3352.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>845.6,3312.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Scopus_data_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -128,7 +128,7 @@
       <AssemblyReference>UiPath.GSuite</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Scopus_data" sap:VirtualizedContainerService.HintSize="745.6,3288" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Scopus_data" sap:VirtualizedContainerService.HintSize="745.6,3248" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_cfr" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_cfr_data" />
@@ -140,7 +140,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uga:ReadRangeConnections x:TypeArguments="sd:DataTable" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ColumnNames="{x:Array Type=x:String}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" RangeMetadata="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="5091a761-797f-4a7b-8b5b-0bfecf478231" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="683.2,257.6" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="UseExisting" Range="Sheet1" ReadAs="Values" Result="[dt_cfr_data]" Spreadsheet="[Sheets_variable]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+    <uga:ReadRangeConnections x:TypeArguments="sd:DataTable" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ColumnNames="{x:Array Type=x:String}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" RangeMetadata="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="41138805-85f5-497f-bcbd-8159d33b70ea" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="683.2,257.6" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="UseExisting" Range="Sheet1" ReadAs="Values" Result="[dt_cfr_data]" Spreadsheet="[Sheets_variable]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
       <uga:ReadRangeConnections.FileIdBackup>
         <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="UseExisting">
           <usau:BackupSlot.BackupValues>
@@ -170,7 +170,7 @@
         </ugam:DriveItemArgument>
       </uga:ReadRangeConnections.Item>
     </uga:ReadRangeConnections>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Scopus preview - Scopus - Sources" sap:VirtualizedContainerService.HintSize="683.2,2878.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="bfda5a98-75ba-4ad2-a3ed-f5f9b90aad45" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Scopus preview - Scopus - Sources" sap:VirtualizedContainerService.HintSize="683.2,2838.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="bfda5a98-75ba-4ad2-a3ed-f5f9b90aad45" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -304,7 +304,7 @@
                       </uix:NGetText.Target>
                     </uix:NGetText>
                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510.4,144" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[str_number +  &quot;  &quot;  + str_results]" />
-                    <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" AuthScopesInvalid="False" Cell="[&quot;G&quot; + int_counter.ToString]" ConnectionId="5091a761-797f-4a7b-8b5b-0bfecf478231" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="510.4,308.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_1" ItemSelectionMode="UseExisting" RangeLocation="Sheet1" Spreadsheet="[Sheets_variable]" UseConnectionService="True" WhatToWrite="[str_results]">
+                    <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" AuthScopesInvalid="False" Cell="[&quot;G&quot; + int_counter.ToString]" ConnectionId="41138805-85f5-497f-bcbd-8159d33b70ea" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="510.4,308.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_1" ItemSelectionMode="UseExisting" RangeLocation="Sheet1" Spreadsheet="[Sheets_variable]" UseConnectionService="True" WhatToWrite="[str_results]">
                       <uga:WriteCellConnections.FileIdBackup>
                         <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="UseExisting">
                           <usau:BackupSlot.BackupValues>
