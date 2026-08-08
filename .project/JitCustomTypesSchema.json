@@ -1,0 +1,99 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 1,
+        "idRef": "ReadRangeConnections`1_1",
+        "hash": "ReadRangeConnections`1_1|DataTable|z4ONN8BaGr0qFf6wQ5EDf1xL5wDayKmq0lWYTJLw1U",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Sl.No",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Full Journal",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Print-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "E-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Publisher",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Country",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Result",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Index",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable1",
+        "hash": "ReadRangeConnections`1_1|DataTable|Z3soah6p2zGjSdcu6UxHl9Gk786EpYTs0zo7nY3ME",
+        "assemblyName": "Studio.Generated.TypedDataTable1"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 2,
+        "idRef": "ReadRangeConnections`1_1",
+        "hash": "ReadRangeConnections`1_1|DataTable|711Sta8ttEgRt01ScbbF9Voqz8S3y9HmpMb3Mh4Gk",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Sl.No",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Full Journal",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Print-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "E-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Publisher",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Country",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Result",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable2",
+        "hash": "ReadRangeConnections`1_1|DataTable|ZOQWWtLg4PcH9b6khdZfYu9QdJgrXbtT34Nem2mlrT8",
+        "assemblyName": "Studio.Generated.TypedDataTable2"
+      }
+    }
+  ]
+}

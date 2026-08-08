@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>735.2,4573.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>845.6,4573.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Scopus_data_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -117,11 +117,7 @@
   <Sequence DisplayName="Scopus_data" sap:VirtualizedContainerService.HintSize="745.6,4508.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_cfr_data" />
-      <Variable x:TypeArguments="x:Int32" Name="int_counter">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="2" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="2" Name="int_counter" />
       <Variable x:TypeArguments="x:String" Name="str_number" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -235,7 +231,7 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.scopus.com/sources.uri" CvTextArea="117, 454, 52, 21" CvTextArgument="ISSN" CvType="Text" DesignTimeRectangle="120, 448, 277, 30" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'ISSN'" FullSelectorArgument="&lt;webctrl id='srcResultComboDrp-button' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='srcResultComboDrp-button' tag='SPAN' type='' class='ui-selectmenu-button mediumSelect ui-selectmenu-button-closed ui-corner-all ui-button ui-widget' aaname='' /&gt;" Guid="eda3e57e-0607-4916-9cd3-389f7fef0fc5" ImageBase64="" InformativeScreenshot="76dea03b8a0b41ba00f9135451b5f424.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Scopus preview - Scopus - Sources' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="80, 653, 430, 1133" FriendlyName="'Filter refine'" FullSelectorArgument="&lt;webctrl id='sRefineResults' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='sRefineResults' tag='DIV' type='' class='' aaname='     ' check:innerText='Filter refine list&amp;#xD;&amp;#xA; Clear filters&amp;#xD;&amp;#xA;Display options&amp;#xD;&amp;#xA;Display only Open Access journals&amp;#xD;&amp;#xA;Counts for 4' /&gt;" SearchSteps="FuzzySelector" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
