@@ -212,7 +212,7 @@
         <InArgument x:TypeArguments="x:Int32">2</InArgument>
       </Assign.Value>
     </Assign>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Web of Science Master Journal List - Search" sap:VirtualizedContainerService.HintSize="683.2,3241.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="c4ab14e2-8f4f-4bf8-b069-b5e38d9d6a2f" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Web of Science Master Journal List - Search" sap:VirtualizedContainerService.HintSize="683.2,3241.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="c4ab14e2-8f4f-4bf8-b069-b5e38d9d6a2f" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -282,7 +282,7 @@
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://mjl.clarivate.com/search-results" CvElementArea="468, 385, 845, 73" CvType="InputBox" DesignTimeRectangle="489, 477, 804, 28" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'1079-0195'" FullSelectorArgument="&lt;webctrl id='search-box' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='search-box' tag='INPUT' type='text' class='mat-mdc-input-element ng-tns-c1205077789-23 ng-valid mat-mdc-form-field-input-control mdc-text-field__input cdk-text-field-autofill-monitored ng-untouched ng-pristine' aaname='' /&gt;" Guid="2dcdf5b4-f905-4533-9473-f3c3804e46fe" InformativeScreenshot="29788b003cc13364f7754a99a5e4125b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                               <uix:Target DesignTimeRectangle="1326, 464, 127, 50" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl class='mat-mdc-button-touch-target' parentid='search-button' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='mat-mdc-button-touch-target' parentid='search-button' tag='SPAN' type='' aaname='' /&gt;" SearchSteps="FuzzySelector" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
@@ -299,7 +299,7 @@
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://mjl.clarivate.com/search-results" CvElementArea="1323, 462, 132, 55" CvTextArea="1354, 480, 62, 20" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1356, 477, 67, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Search'" FullSelectorArgument="&lt;webctrl class='mdc-button__label' parentid='search-button' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='mdc-button__label' parentid='search-button' tag='SPAN' type='' aaname=' Search   ' check:innerText='Search' /&gt;" Guid="ba930c1f-2b9e-40d0-8a7b-53570db88e5c" InformativeScreenshot="083c3c4e5a20a2e06e43a6e51f5ecbaf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                               <uix:Target CvElementArea="1323, 462, 132, 55" CvTextArea="1354, 480, 62, 20" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1326, 464, 127, 50" ElementType="Button" FriendlyName="'Search'" FullSelectorArgument="&lt;webctrl id='search-button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='search-button' tag='BUTTON' type='' class='cdx-but-xl mdc-button mdc-button--unelevated mat-mdc-unelevated-button mat-primary mat-mdc-button-base' aaname=' Search   ' check:innerText='Search' /&gt;" SearchSteps="FuzzySelector, CV" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
@@ -316,7 +316,7 @@
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="https://mjl.clarivate.com/search-results" CvTextArea="471, 729, 175, 21" CvType="AnyWordGroup" DesignTimeRectangle="473, 717, 225, 33" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Found 0 results (Page 1)'" FullSelectorArgument="&lt;webctrl class='top-column' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='top-column' tag='DIV' type='' /&gt;" Guid="c23017e9-b976-455d-954b-0a34b5caddfc" InformativeScreenshot="e830bb9277dc2a224768e302511aa758.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                               <uix:Target CvTextArea="471, 689, 160, 22" CvTextArgument="Search Results" CvType="Text" DesignTimeRectangle="473, 684, 1358, 33" ElementType="Text" FriendlyName="'Search Results'" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname=' Search Results ' check:innerText='Search Results' /&gt;" SearchSteps="FuzzySelector, CV" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
@@ -341,7 +341,7 @@
                             <uix:NGetText.Target>
                               <uix:TargetAnchorable BrowserURL="https://mjl.clarivate.com/search-results" DesignTimeRectangle="469, 745, 1365, 348" DesignTimeScaleFactor="1.25" FriendlyName="'CRITICAL STUDIES'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;cdx-app&amp;gt;mat-sidenav-container&amp;gt;mat-sidenav-content&amp;gt;main&amp;gt;can-home-page&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;mat-sidenav-container&amp;gt;mat-sidenav-content&amp;gt;app-journal-search-results&amp;gt;div&amp;gt;div&amp;gt;mat-card' tag='MAT-CARD' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='MAT-CARD' class='mat-mdc-card mdc-card card-width-special highlighted-card' aaname='' /&gt;" Guid="d05efcd1-e2dd-48f6-981b-e3b5edc52ee6" InformativeScreenshot="5523bad33d1b5634ef8c8a0c287cde99.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - Search' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                 <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                     <uix:Target CvTextArea="471, 680, 202, 22" CvTextArgument="Exact Match Found" CvType="Text" DesignTimeRectangle="473, 675, 1358, 50" ElementType="Text" FriendlyName="'Exact Match Found'" FullSelectorArgument="&lt;webctrl class='ng-star-inserted' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl class='ng-star-inserted' tag='H2' type='' aaname='Exact Match Found' check:innerText='Exact Match Found' /&gt;" SearchSteps="FuzzySelector, CV" />
                                   </scg:List>
                                 </uix:TargetAnchorable.Anchors>
@@ -417,14 +417,14 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,144" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;No index found&quot;]" />
-                          <uga:WriteCellConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="08/07/2026 21:43:24 CFR-Data" BrowserItemId="https://docs.google.com/spreadsheets/d/182QAkm4yy275wN_KuSE_4Tzd56B09qs777kvEZ4pXWk/edit?usp=drivesdk" Cell="[&quot;H&quot; + int_counter.ToString]" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="433.6,308.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_3" ItemSelectionMode="Browse" RangeLocation="Sheet1" UseConnectionService="True" WhatToWrite="[&quot;No Data&quot;]">
+                          <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" AuthScopesInvalid="False" Cell="[&quot;H&quot; + int_counter.ToString]" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="433.6,308.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_3" ItemSelectionMode="UseExisting" RangeLocation="Sheet1" Spreadsheet="[Sheets_variable]" UseConnectionService="True" WhatToWrite="[&quot;No Data&quot;]">
                             <uga:WriteCellConnections.FileIdBackup>
-                              <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID3" StoredValue="Browse">
+                              <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID3" StoredValue="UseExisting">
                                 <usau:BackupSlot.BackupValues>
                                   <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="3">
-                                    <x:Null />
-                                    <x:Null />
-                                    <x:Null />
+                                    <InArgument x:TypeArguments="x:String">https://docs.google.com/spreadsheets/d/182QAkm4yy275wN_KuSE_4Tzd56B09qs777kvEZ4pXWk/edit?usp=drivesdk</InArgument>
+                                    <InArgument x:TypeArguments="x:String" />
+                                    <InArgument x:TypeArguments="x:String">08/07/2026 21:43:24 CFR-Data</InArgument>
                                   </scg:List>
                                   <scg:List x:TypeArguments="x:Object" x:Key="UseExisting" Capacity="1">
                                     <InArgument x:TypeArguments="ugdm:GDriveRemoteItem">[Sheets_variable]</InArgument>
@@ -433,10 +433,7 @@
                               </usau:BackupSlot>
                             </uga:WriteCellConnections.FileIdBackup>
                             <uga:WriteCellConnections.Item>
-                              <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID3}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/182QAkm4yy275wN_KuSE_4Tzd56B09qs777kvEZ4pXWk/edit?usp=drivesdk" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" FriendlyName="08/07/2026 21:43:24 CFR-Data" FullPathHint="My Drive/Internal Project/08/07/2026 21:43:24 CFR-Data" InputMode="Browse">
-                                <ugam:DriveItemArgument.DriveId>
-                                  <InArgument x:TypeArguments="x:String" />
-                                </ugam:DriveItemArgument.DriveId>
+                              <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID3}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" DriveId="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" Existing="[Sheets_variable]" FullPathHint="My Drive/Internal Project/08/07/2026 21:43:24 CFR-Data" InputMode="UseExisting">
                                 <ugam:DriveItemArgument.ParentIdFullPathHint>
                                   <InArgument x:TypeArguments="x:String">
                                     <Literal x:TypeArguments="x:String" Value="" />

@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>845.6,4573.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>845.6,4704</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Scopus_data_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -112,9 +112,21 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
       <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
       <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Scopus_data" sap:VirtualizedContainerService.HintSize="745.6,4508.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Scopus_data" sap:VirtualizedContainerService.HintSize="745.6,4639.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_cfr_data" />
       <Variable x:TypeArguments="x:Int32" Default="2" Name="int_counter" />
@@ -186,13 +198,13 @@
       </uga:WriteCellConnections.Item>
     </uga:WriteCellConnections>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="683.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Opening Scopus Website&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Scopus preview - Scopus - Sources" sap:VirtualizedContainerService.HintSize="683.2,2838.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="bfda5a98-75ba-4ad2-a3ed-f5f9b90aad45" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Scopus preview - Scopus - Sources" sap:VirtualizedContainerService.HintSize="683.2,2968.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="bfda5a98-75ba-4ad2-a3ed-f5f9b90aad45" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="649.6,2621.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="649.6,2752" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -238,13 +250,13 @@
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_cfr_data]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="587.2,2308.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_cfr_data]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="587.2,2439.2" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="553.6,2120.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="553.6,2251.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="str_results" />
                     </Sequence.Variables>
@@ -314,6 +326,7 @@
                         </uix:TargetAnchorable>
                       </uix:NClick.Target>
                     </uix:NClick>
+                    <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="510.4,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
                     <uix:NGetText DisplayName="Get Text 'Filter refine'" sap:VirtualizedContainerService.HintSize="510.4,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="bfda5a98-75ba-4ad2-a3ed-f5f9b90aad45" TextString="[str_results]" Version="V3">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.scopus.com/sources.uri" CvTextArea="547, 726, 94, 26" CvType="AnyWordGroup" DesignTimeRectangle="549, 721, 94, 38" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'1 result'" FullSelectorArgument="&lt;webctrl id='resultCount' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='resultCount' tag='SPAN' type='' class='' /&gt;" Guid="5ce0578c-00f7-4a25-9b8c-e7fab015e67d" InformativeScreenshot="90fe4688f9bc0d7f469f6fee1650a89f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Scopus preview - Scopus - Sources' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
