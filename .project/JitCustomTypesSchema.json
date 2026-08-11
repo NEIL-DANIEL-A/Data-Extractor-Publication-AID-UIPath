@@ -142,6 +142,206 @@
         "hash": "ReadRangeConnections`1_1|DataTable|MWve16tpRLrx9Z9GhxjnrCnuUqay05l3jcjU8kQ692M",
         "assemblyName": "Studio.Generated.TypedDataTable3"
       }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 4,
+        "idRef": "ReadRangeConnections`1_1",
+        "hash": "ReadRangeConnections`1_1|DataTable|nWe18kghJdYom7CvV97aUZNMdHfSx76wndIvwatvQ",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Sl.No",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Full Journal",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Print-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "E-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Publisher",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Country",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Cfr-Scopus-Result",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Index",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "SJR value",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Quartile",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "H-Index",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Coverage",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable4",
+        "hash": "ReadRangeConnections`1_1|DataTable|FBD1BFdYHwQ6BHTrfUzdvmoV1wD9A6cJN8csRpACc",
+        "assemblyName": "Studio.Generated.TypedDataTable4"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 5,
+        "idRef": "ReadRangeConnections`1_1",
+        "hash": "ReadRangeConnections`1_1|DataTable|5fTjRrcNAhHWKBDEDep01QCEYWBCFggx2P7Ebb1Xo",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Sl.No",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Full Journal",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Print-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "E-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Publisher",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Country",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Cfr-Scopus-Result",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Index",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "SJR value",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Quartile",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "H-Index",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Coverage",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Journal URL",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable5",
+        "hash": "ReadRangeConnections`1_1|DataTable|n8z97jHEl9QhZ0zudl6ym4W7mlagk8uxZenKeNCbo",
+        "assemblyName": "Studio.Generated.TypedDataTable5"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 6,
+        "idRef": "ReadRangeConnections`1_3",
+        "hash": "ReadRangeConnections`1_3|DataTable|5fTjRrcNAhHWKBDEDep01QCEYWBCFggx2P7Ebb1Xo",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Sl.No",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Full Journal",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Print-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "E-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Publisher",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Country",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Cfr-Scopus-Result",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Index",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "SJR value",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Quartile",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "H-Index",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Coverage",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Journal URL",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable6",
+        "hash": "ReadRangeConnections`1_3|DataTable|n8z97jHEl9QhZ0zudl6ym4W7mlagk8uxZenKeNCbo",
+        "assemblyName": "Studio.Generated.TypedDataTable6"
+      }
     }
   ]
 }

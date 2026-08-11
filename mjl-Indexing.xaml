@@ -1,11 +1,11 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="mjl_Indexing" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugdm="clr-namespace:UiPath.GSuite.Drive.Models;assembly=UiPath.GSuite" xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="mjl_Indexing" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugdm="clr-namespace:UiPath.GSuite.Drive.Models;assembly=UiPath.GSuite" xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="Sheets_variable" Type="InArgument(ugdm:GDriveRemoteItem)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>845.6,4733.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>735.2,5304</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>mjl_Indexing_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -58,6 +58,7 @@
       <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -130,9 +131,21 @@
       <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
       <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
       <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable3</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable4</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable5</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable4</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable4</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable4</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable4</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable4</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable3</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable5</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable5</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="mjl_Indexing" sap:VirtualizedContainerService.HintSize="745.6,4668.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="mjl_Indexing" sap:VirtualizedContainerService.HintSize="745.6,5239.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_number" />
       <Variable x:TypeArguments="x:String" Name="str_results" />
@@ -154,9 +167,9 @@
         <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="UseExisting">
           <usau:BackupSlot.BackupValues>
             <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="3">
+              <InArgument x:TypeArguments="x:String">https://docs.google.com/spreadsheets/d/13N1QzG_dFMEo9RR4_uUS6gpOArbC91aNze0-HWqIP8w/edit?usp=drivesdk</InArgument>
               <InArgument x:TypeArguments="x:String" />
-              <InArgument x:TypeArguments="x:String" />
-              <InArgument x:TypeArguments="x:String" />
+              <InArgument x:TypeArguments="x:String">Copy of 08/09/2026 09:15:17 CFR-Data</InArgument>
             </scg:List>
             <scg:List x:TypeArguments="x:Object" x:Key="UseExisting" Capacity="1">
               <InArgument x:TypeArguments="ugdm:GDriveRemoteItem">[Sheets_variable]</InArgument>
@@ -165,7 +178,7 @@
         </usau:BackupSlot>
       </uga:ReadRangeConnections.FileIdBackup>
       <uga:ReadRangeConnections.Item>
-        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID0}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" DriveId="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" Existing="[Sheets_variable]" FullPathHint="[Nothing]" InputMode="UseExisting">
+        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID0}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" DriveId="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" Existing="[Sheets_variable]" FullPathHint="My Drive/Internal Project/Copy of 08/09/2026 09:15:17 CFR-Data" InputMode="UseExisting">
           <ugam:DriveItemArgument.ParentIdFullPathHint>
             <InArgument x:TypeArguments="x:String">
               <Literal x:TypeArguments="x:String" Value="" />
@@ -178,14 +191,14 @@
       </uga:ReadRangeConnections.RangeMetadata>
     </uga:ReadRangeConnections>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="683.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;SpreadSheet read, Creating Index Column&quot;]" />
-    <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" AuthScopesInvalid="False" Cell="H1" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="683.2,308.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_1" ItemSelectionMode="UseExisting" RangeLocation="Sheet1" Spreadsheet="[Sheets_variable]" UseConnectionService="True" WhatToWrite="[&quot;Index&quot;]">
+    <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" AuthScopesInvalid="False" Cell="H1" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="683.2,308.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_4" ItemSelectionMode="UseExisting" RangeLocation="Sheet1" Spreadsheet="[Sheets_variable]" UseConnectionService="True" WhatToWrite="[&quot;Index&quot;]">
       <uga:WriteCellConnections.FileIdBackup>
         <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="UseExisting">
           <usau:BackupSlot.BackupValues>
             <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="3">
-              <InArgument x:TypeArguments="x:String">https://docs.google.com/spreadsheets/d/182QAkm4yy275wN_KuSE_4Tzd56B09qs777kvEZ4pXWk/edit?usp=drivesdk</InArgument>
+              <InArgument x:TypeArguments="x:String">https://docs.google.com/spreadsheets/d/13N1QzG_dFMEo9RR4_uUS6gpOArbC91aNze0-HWqIP8w/edit?usp=drivesdk</InArgument>
               <InArgument x:TypeArguments="x:String" />
-              <InArgument x:TypeArguments="x:String">08/07/2026 21:43:24 CFR-Data</InArgument>
+              <InArgument x:TypeArguments="x:String">Copy of 08/09/2026 09:15:17 CFR-Data</InArgument>
             </scg:List>
             <scg:List x:TypeArguments="x:Object" x:Key="UseExisting" Capacity="1">
               <InArgument x:TypeArguments="ugdm:GDriveRemoteItem">[Sheets_variable]</InArgument>
@@ -194,7 +207,7 @@
         </usau:BackupSlot>
       </uga:WriteCellConnections.FileIdBackup>
       <uga:WriteCellConnections.Item>
-        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID1}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" DriveId="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" Existing="[Sheets_variable]" FullPathHint="My Drive/Internal Project/08/07/2026 21:43:24 CFR-Data" InputMode="UseExisting">
+        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID1}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" DriveId="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" Existing="[Sheets_variable]" FullPathHint="My Drive/Internal Project/Copy of 08/09/2026 09:15:17 CFR-Data" InputMode="UseExisting">
           <ugam:DriveItemArgument.ParentIdFullPathHint>
             <InArgument x:TypeArguments="x:String">
               <Literal x:TypeArguments="x:String" Value="" />
@@ -202,6 +215,43 @@
           </ugam:DriveItemArgument.ParentIdFullPathHint>
         </ugam:DriveItemArgument>
       </uga:WriteCellConnections.Item>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uga:WriteCellConnections>
+    <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" AuthScopesInvalid="False" Cell="M1" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="683.2,308.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_5" ItemSelectionMode="UseExisting" RangeLocation="Sheet1" Spreadsheet="[Sheets_variable]" UseConnectionService="True" WhatToWrite="[&quot;Journal URL&quot;]">
+      <uga:WriteCellConnections.FileIdBackup>
+        <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID2" StoredValue="UseExisting">
+          <usau:BackupSlot.BackupValues>
+            <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="3">
+              <InArgument x:TypeArguments="x:String">https://docs.google.com/spreadsheets/d/13N1QzG_dFMEo9RR4_uUS6gpOArbC91aNze0-HWqIP8w/edit?usp=drivesdk</InArgument>
+              <InArgument x:TypeArguments="x:String" />
+              <InArgument x:TypeArguments="x:String">Copy of 08/09/2026 09:15:17 CFR-Data</InArgument>
+            </scg:List>
+            <scg:List x:TypeArguments="x:Object" x:Key="UseExisting" Capacity="1">
+              <InArgument x:TypeArguments="ugdm:GDriveRemoteItem">[Sheets_variable]</InArgument>
+            </scg:List>
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </uga:WriteCellConnections.FileIdBackup>
+      <uga:WriteCellConnections.Item>
+        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID2}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" DriveId="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" Existing="[Sheets_variable]" FullPathHint="My Drive/Internal Project/Copy of 08/09/2026 09:15:17 CFR-Data" InputMode="UseExisting">
+          <ugam:DriveItemArgument.ParentIdFullPathHint>
+            <InArgument x:TypeArguments="x:String">
+              <Literal x:TypeArguments="x:String" Value="" />
+            </InArgument>
+          </ugam:DriveItemArgument.ParentIdFullPathHint>
+        </ugam:DriveItemArgument>
+      </uga:WriteCellConnections.Item>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </uga:WriteCellConnections>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="683.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Opening mjl Website&quot;]" />
     <Assign sap:VirtualizedContainerService.HintSize="683.2,81.6" sap2010:WorkflowViewState.IdRef="Assign_7">
@@ -212,45 +262,162 @@
         <InArgument x:TypeArguments="x:Int32">2</InArgument>
       </Assign.Value>
     </Assign>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Web of Science Master Journal List - Search" sap:VirtualizedContainerService.HintSize="683.2,3241.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="c4ab14e2-8f4f-4bf8-b069-b5e38d9d6a2f" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Web of Science Master Journal List - Search" sap:VirtualizedContainerService.HintSize="683.2,3463.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="c4ab14e2-8f4f-4bf8-b069-b5e38d9d6a2f" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="649.6,3024.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="649.6,3246.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="username" />
+              <Variable x:TypeArguments="ss:SecureString" Name="password" />
+            </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_sheets_data]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="587.2,2909.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
-              <ui:ForEachRow.Body>
-                <ActivityAction x:TypeArguments="sd:DataRow">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="553.6,2721.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="587.2,24.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,192" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence DisplayName="Login Sequence" sap:VirtualizedContainerService.HintSize="449.6,80" sap2010:WorkflowViewState.IdRef="Sequence_12">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <If Condition="[CurrentRow(&quot;Print-ISSN&quot;).Equals(&quot;&quot;)]" sap:VirtualizedContainerService.HintSize="510.4,24.8" sap2010:WorkflowViewState.IdRef="If_1">
+                    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="Mjl-Password" CacheStrategy="None" DisplayName="Get Credential" FolderPath="neildaniel.a.2024.cse@rajalakshmi.edu.in's workspace" sap:VirtualizedContainerService.HintSize="387.2,143.2" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[password]" Username="[username]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:GetRobotCredential>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c4ab14e2-8f4f-4bf8-b069-b5e38d9d6a2f" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://mjl.clarivate.com/search-results" CvElementArea="1556, 184, 95, 53" CvTextArea="1577, 201, 50, 23" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="1580, 198, 48, 26" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl class='mdc-button__label' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='mdc-button__label' tag='SPAN' type='' aaname=' Login ' check:innerText='Login' /&gt;" Guid="2661b001-5e91-4955-845b-27ee65059914" InformativeScreenshot="8e94ed80ef9ce68b66daf4e06aa240dd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="79, 194, 1773, 26" CvTextArgument="Master Journal List Search Journals Match Manuscript Downloads Help Center Login Create Free Account" CvType="Text" DesignTimeRectangle="9, 167, 1901, 88" FriendlyName="'Search Journals'" FullSelectorArgument="&lt;webctrl class='cdx-header__product-bar' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='cdx-header__product-bar' tag='DIV' type='' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,24.8" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="c4ab14e2-8f4f-4bf8-b069-b5e38d9d6a2f" Text="[username]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://access.clarivate.com/login?app=censub" CvElementArea="517, 548, 378, 73" CvType="InputBox" DesignTimeRectangle="539, 568, 335, 25" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT mat-input-1'" FullSelectorArgument="&lt;webctrl id='loginIframe' tag='IFRAME' /&gt;&lt;webctrl id='mat-input-1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='loginIframe' tag='IFRAME' /&gt;&lt;webctrl id='mat-input-1' tag='INPUT' type='' class='mat-mdc-input-element ng-untouched ng-pristine ng-invalid mat-mdc-form-field-input-control mdc-text-field__input cdk-text-field-autofill-monitored ng-star-inserted' aaname='Email address' /&gt;" Guid="9979acf6-35bd-40b2-9cd0-06d1d5d45e4e" InformativeScreenshot="0be0e611f48fba7c0b85efde0fa70077.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - WoS MJL by Clarivate' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvElementArea="517, 548, 378, 73" CvType="InputBox" DesignTimeRectangle="538, 573, 119, 21" ElementType="Text" FriendlyName="'Email address'" FullSelectorArgument="&lt;webctrl id='loginIframe' tag='IFRAME' /&gt;&lt;webctrl id='mat-mdc-form-field-label-0' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='loginIframe' tag='IFRAME' /&gt;&lt;webctrl id='mat-mdc-form-field-label-0' tag='LABEL' type='' class='mdc-floating-label mat-mdc-floating-label ng-tns-c508571215-0 ng-star-inserted' aaname='' check:innerText='Email address' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,24.8" sap2010:WorkflowViewState.IdRef="NTypeInto_3" IsPassword="True" ScopeIdentifier="c4ab14e2-8f4f-4bf8-b069-b5e38d9d6a2f" SecureText="[password]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://access.clarivate.com/login?app=censub" CvElementArea="517, 657, 378, 74" CvType="InputBox" DesignTimeRectangle="539, 677, 290, 25" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FriendlyName="'INPUT mat-input-0'" FullSelectorArgument="&lt;webctrl id='loginIframe' tag='IFRAME' /&gt;&lt;webctrl id='mat-input-0' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='loginIframe' tag='IFRAME' /&gt;&lt;webctrl id='mat-input-0' tag='INPUT' type='password' class='mat-mdc-input-element ng-tns-c508571215-1 ng-untouched ng-pristine ng-invalid mat-mdc-form-field-input-control mdc-text-field__input cdk-text-field-autofill-monitored' aaname='Password' /&gt;" Guid="7ec74cf6-3185-48fd-8a31-b10a7b8d2ace" InformativeScreenshot="9a9e44adb349b9f09182ec2620dd0d24.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - WoS MJL by Clarivate' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvElementArea="517, 657, 378, 74" CvType="InputBox" DesignTimeRectangle="538, 683, 85, 21" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl id='loginIframe' tag='IFRAME' /&gt;&lt;webctrl id='mat-mdc-form-field-label-2' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='loginIframe' tag='IFRAME' /&gt;&lt;webctrl id='mat-mdc-form-field-label-2' tag='LABEL' type='' class='mdc-floating-label mat-mdc-floating-label ng-tns-c508571215-1 ng-star-inserted' aaname='' check:innerText='Password' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign in'" sap:VirtualizedContainerService.HintSize="387.2,24.8" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c4ab14e2-8f4f-4bf8-b069-b5e38d9d6a2f" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://access.clarivate.com/login?app=censub" CvElementArea="788, 759, 108, 50" CvTextArea="809, 771, 65, 26" CvTextArgument="Sign in" CvType="Button" DesignTimeRectangle="811, 772, 61, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Sign in'" FullSelectorArgument="&lt;webctrl id='loginIframe' tag='IFRAME' /&gt;&lt;webctrl class='ng-star-inserted' parentid='signIn-btn' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='loginIframe' tag='IFRAME' /&gt;&lt;webctrl class='ng-star-inserted' parentid='signIn-btn' tag='SPAN' type='' aaname='Sign in' check:innerText='Sign in' /&gt;" Guid="945999a8-1b6b-48e3-9033-d0c4378062d6" InformativeScreenshot="440fe89b1bf43d3e2b38e197dd885f7e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - WoS MJL by Clarivate' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="536, 685, 86, 17" CvTextArgument="Password*" CvType="Text" DesignTimeRectangle="519, 657, 375, 70" ElementType="InputBoxPassword" FriendlyName="'Passwordvisibility'" FullSelectorArgument="&lt;webctrl id='loginIframe' tag='IFRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;microui-app&amp;gt;div&amp;gt;div&amp;gt;microui-base&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;base-login&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;login&amp;gt;steam-login&amp;gt;form&amp;gt;span&amp;gt;mat-form-field&amp;gt;div&amp;gt;div' idx='3' parentname='loginForm' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='loginIframe' tag='IFRAME' /&gt;&lt;webctrl type='' class='mat-mdc-form-field-flex ng-tns-c508571215-1' parentname='loginForm' tag='DIV' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c4ab14e2-8f4f-4bf8-b069-b5e38d9d6a2f" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://mjl.clarivate.com/home" CvElementArea="1258, 718, 202, 56" CvTextArea="1289, 735, 141, 20" CvTextArgument="Search Journals" CvType="Button" DesignTimeRectangle="1261, 715, 198, 60" DesignTimeScaleFactor="1.25" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl class='mat-mdc-button-touch-target' parentid='search-button' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='mat-mdc-button-touch-target' parentid='search-button' tag='SPAN' type='' aaname='' /&gt;" Guid="0fedbac5-fd7c-4158-845f-eb50e88a47f2" InformativeScreenshot="d86a0b68f5d9327a45cbda5a858bfe70.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvElementArea="457, 710, 782, 73" CvType="InputBox" DesignTimeRectangle="480, 711, 736, 70" ElementType="InputBox" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;cdx-app&amp;gt;mat-sidenav-container&amp;gt;mat-sidenav-content&amp;gt;main&amp;gt;can-home-page&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;app-initial-search-box&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;mat-form-field&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' parentid='search-button-mat-form' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='mat-mdc-form-field-infix ng-tns-c1205077789-29' parentid='search-button-mat-form' tag='DIV' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  </Sequence>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_sheets_data]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="587.2,3066.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="553.6,2878.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If Condition="[CurrentRow(&quot;Print-ISSN&quot;).Equals(&quot;&quot;)]" sap:VirtualizedContainerService.HintSize="510.4,183.2" sap2010:WorkflowViewState.IdRef="If_1">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
-                        <Sequence sap:VirtualizedContainerService.HintSize="476.8,170.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                        <Sequence sap:VirtualizedContainerService.HintSize="476.8,171.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_1">
+                          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[str_number]</OutArgument>
                             </Assign.To>
@@ -261,13 +428,13 @@
                         </Sequence>
                       </If.Then>
                       <If.Else>
-                        <Sequence sap:VirtualizedContainerService.HintSize="476.8,170.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <Sequence sap:VirtualizedContainerService.HintSize="476.8,171.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_2">
+                          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[str_number]</OutArgument>
                             </Assign.To>
@@ -323,7 +490,7 @@
                         </uix:TargetAnchorable>
                       </uix:NGetText.Target>
                     </uix:NGetText>
-                    <If Condition="[str_resultStatus.Contains(&quot;1 results&quot;)]" sap:VirtualizedContainerService.HintSize="510.4,1913.6" sap2010:WorkflowViewState.IdRef="If_2">
+                    <If Condition="[str_resultStatus.Contains(&quot;1 results&quot;)]" sap:VirtualizedContainerService.HintSize="510.4,1912" sap2010:WorkflowViewState.IdRef="If_2">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -331,7 +498,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
-                        <Sequence sap:VirtualizedContainerService.HintSize="476.8,1026.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <Sequence sap:VirtualizedContainerService.HintSize="476.8,1024.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -354,7 +521,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NGetText>
-                          <Assign sap:VirtualizedContainerService.HintSize="433.6,84.8" sap2010:WorkflowViewState.IdRef="Assign_4">
+                          <Assign sap:VirtualizedContainerService.HintSize="433.6,83.2" sap2010:WorkflowViewState.IdRef="Assign_4">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[str_Index]</OutArgument>
                             </Assign.To>
@@ -376,12 +543,12 @@
                           </ui:LogMessage>
                           <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" AuthScopesInvalid="False" Cell="[&quot;H&quot; + int_counter.ToString]" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="433.6,308.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_2" ItemSelectionMode="UseExisting" RangeLocation="Sheet1" Spreadsheet="[Sheets_variable]" UseConnectionService="True" WhatToWrite="[str_Index]">
                             <uga:WriteCellConnections.FileIdBackup>
-                              <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID2" StoredValue="UseExisting">
+                              <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID3" StoredValue="UseExisting">
                                 <usau:BackupSlot.BackupValues>
                                   <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="3">
-                                    <InArgument x:TypeArguments="x:String">https://docs.google.com/spreadsheets/d/182QAkm4yy275wN_KuSE_4Tzd56B09qs777kvEZ4pXWk/edit?usp=drivesdk</InArgument>
+                                    <InArgument x:TypeArguments="x:String">https://docs.google.com/spreadsheets/d/1y5iBdCAWJGF9XUS5r-isW4IfbLHiu8pCVCQah5fSAhs/edit?usp=drivesdk</InArgument>
                                     <InArgument x:TypeArguments="x:String" />
-                                    <InArgument x:TypeArguments="x:String">08/07/2026 21:43:24 CFR-Data</InArgument>
+                                    <InArgument x:TypeArguments="x:String">08/10/2026 12:36:13 CFR-Data</InArgument>
                                   </scg:List>
                                   <scg:List x:TypeArguments="x:Object" x:Key="UseExisting" Capacity="1">
                                     <InArgument x:TypeArguments="ugdm:GDriveRemoteItem">[Sheets_variable]</InArgument>
@@ -390,7 +557,7 @@
                               </usau:BackupSlot>
                             </uga:WriteCellConnections.FileIdBackup>
                             <uga:WriteCellConnections.Item>
-                              <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID2}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" DriveId="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" Existing="[Sheets_variable]" FullPathHint="My Drive/Internal Project/08/07/2026 21:43:24 CFR-Data" InputMode="UseExisting">
+                              <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID3}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" DriveId="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" Existing="[Sheets_variable]" FullPathHint="My Drive/Internal Project/08/10/2026 12:36:13 CFR-Data" InputMode="UseExisting">
                                 <ugam:DriveItemArgument.ParentIdFullPathHint>
                                   <InArgument x:TypeArguments="x:String">
                                     <Literal x:TypeArguments="x:String" Value="" />
@@ -419,12 +586,12 @@
                           <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,144" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;No index found&quot;]" />
                           <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" AuthScopesInvalid="False" Cell="[&quot;H&quot; + int_counter.ToString]" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="433.6,308.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_3" ItemSelectionMode="UseExisting" RangeLocation="Sheet1" Spreadsheet="[Sheets_variable]" UseConnectionService="True" WhatToWrite="[&quot;No Data&quot;]">
                             <uga:WriteCellConnections.FileIdBackup>
-                              <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID3" StoredValue="UseExisting">
+                              <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID4" StoredValue="UseExisting">
                                 <usau:BackupSlot.BackupValues>
                                   <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="3">
-                                    <InArgument x:TypeArguments="x:String">https://docs.google.com/spreadsheets/d/182QAkm4yy275wN_KuSE_4Tzd56B09qs777kvEZ4pXWk/edit?usp=drivesdk</InArgument>
+                                    <InArgument x:TypeArguments="x:String">https://docs.google.com/spreadsheets/d/13N1QzG_dFMEo9RR4_uUS6gpOArbC91aNze0-HWqIP8w/edit?usp=drivesdk</InArgument>
                                     <InArgument x:TypeArguments="x:String" />
-                                    <InArgument x:TypeArguments="x:String">08/07/2026 21:43:24 CFR-Data</InArgument>
+                                    <InArgument x:TypeArguments="x:String">Copy of 08/09/2026 09:15:17 CFR-Data</InArgument>
                                   </scg:List>
                                   <scg:List x:TypeArguments="x:Object" x:Key="UseExisting" Capacity="1">
                                     <InArgument x:TypeArguments="ugdm:GDriveRemoteItem">[Sheets_variable]</InArgument>
@@ -433,7 +600,7 @@
                               </usau:BackupSlot>
                             </uga:WriteCellConnections.FileIdBackup>
                             <uga:WriteCellConnections.Item>
-                              <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID3}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" DriveId="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" Existing="[Sheets_variable]" FullPathHint="My Drive/Internal Project/08/07/2026 21:43:24 CFR-Data" InputMode="UseExisting">
+                              <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID4}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" DriveId="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" Existing="[Sheets_variable]" FullPathHint="My Drive/Internal Project/Copy of 08/09/2026 09:15:17 CFR-Data" InputMode="UseExisting">
                                 <ugam:DriveItemArgument.ParentIdFullPathHint>
                                   <InArgument x:TypeArguments="x:String">
                                     <Literal x:TypeArguments="x:String" Value="" />
