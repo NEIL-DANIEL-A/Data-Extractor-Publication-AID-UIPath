@@ -1,12 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Scopus_data" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugdm="clr-namespace:UiPath.GSuite.Drive.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <x:Members>
-    <x:Property Name="Sheets_variable" Type="InArgument(ugdm:GDriveRemoteItem)" />
-  </x:Members>
-  <VisualBasic.Settings>
-    <x:Null />
-  </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>869.6,4704</sap:VirtualizedContainerService.HintSize>
-  <sap2010:WorkflowViewState.IdRef>Scopus_data_1</sap2010:WorkflowViewState.IdRef>
+<Activity mc:Ignorable="sap sap2010" x:Class="Scopus_data" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="833.6,4704" sap2010:WorkflowViewState.IdRef="Scopus_data_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugdm="clr-namespace:UiPath.GSuite.Drive.Models;assembly=UiPath.GSuite" xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>GlobalConstantsNamespace</x:String>
@@ -124,6 +116,8 @@
       <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
       <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
       <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable5</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable7</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Scopus_data" sap:VirtualizedContainerService.HintSize="745.6,4639.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -139,9 +133,9 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="683.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Inside Scopus Workflow&quot;]" />
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="683.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Reading CFR data Sheet&quot;]" />
-    <uga:ReadRangeConnections x:TypeArguments="sd:DataTable" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ColumnNames="{x:Array Type=x:String}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" RangeMetadata="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="683.2,257.6" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_3" ItemSelectionMode="UseExisting" Range="Sheet1" ReadAs="Values" Result="[dt_cfr_data]" Spreadsheet="[Sheets_variable]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+    <uga:ReadRangeConnections x:TypeArguments="sd:DataTable" ColumnNames="{x:Array Type=x:String}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Publication-AID-Project-Centralized-Data" BrowserItemId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="683.2,257.6" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_3" ItemSelectionMode="Browse" Range="Sheet1" ReadAs="Values" Result="[dt_cfr_data]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
       <uga:ReadRangeConnections.FileIdBackup>
-        <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="UseExisting">
+        <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="Browse">
           <usau:BackupSlot.BackupValues>
             <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="3">
               <x:Null />
@@ -149,18 +143,16 @@
               <x:Null />
             </scg:List>
             <scg:List x:TypeArguments="x:Object" x:Key="UseExisting" Capacity="1">
-              <x:Null />
+              <InArgument x:TypeArguments="ugdm:GDriveRemoteItem">[Sheets_variable]</InArgument>
             </scg:List>
           </usau:BackupSlot.BackupValues>
         </usau:BackupSlot>
       </uga:ReadRangeConnections.FileIdBackup>
       <uga:ReadRangeConnections.Item>
-        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID0}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" DriveId="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" Existing="[Sheets_variable]" InputMode="UseExisting">
-          <ugam:DriveItemArgument.FullPathHint>
-            <InArgument x:TypeArguments="x:String">
-              <Literal x:TypeArguments="x:String" Value="" />
-            </InArgument>
-          </ugam:DriveItemArgument.FullPathHint>
+        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID0}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" FriendlyName="Publication-AID-Project-Centralized-Data" FullPathHint="My Drive/DO NOT DELETE/Publication-AID-Project-Centralized-Data" InputMode="Browse">
+          <ugam:DriveItemArgument.DriveId>
+            <InArgument x:TypeArguments="x:String" />
+          </ugam:DriveItemArgument.DriveId>
           <ugam:DriveItemArgument.ParentIdFullPathHint>
             <InArgument x:TypeArguments="x:String">
               <Literal x:TypeArguments="x:String" Value="" />
@@ -168,27 +160,31 @@
           </ugam:DriveItemArgument.ParentIdFullPathHint>
         </ugam:DriveItemArgument>
       </uga:ReadRangeConnections.Item>
+      <uga:ReadRangeConnections.RangeMetadata>
+        <ugsm:RangeMetadataSlim ColumnStart="1" RangeType="Range" />
+      </uga:ReadRangeConnections.RangeMetadata>
     </uga:ReadRangeConnections>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="683.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;SpreadSheet read, Creating (Cfr-Scopus-Result) Column&quot;]" />
-    <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" AuthScopesInvalid="False" Cell="G1" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="683.2,308.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_4" ItemSelectionMode="UseExisting" RangeLocation="Sheet1" Spreadsheet="[Sheets_variable]" UseConnectionService="True" WhatToWrite="[&quot;Cfr-Scopus-Result&quot;]">
+    <uga:WriteCellConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Publication-AID-Project-Centralized-Data" BrowserItemId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" Cell="G1" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="683.2,308.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_4" ItemSelectionMode="Browse" RangeLocation="Sheet1" UseConnectionService="True" WhatToWrite="[&quot;Scopus-Result&quot;]">
       <uga:WriteCellConnections.FileIdBackup>
-        <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="UseExisting">
+        <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="Browse">
           <usau:BackupSlot.BackupValues>
             <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="3">
               <x:Null />
               <x:Null />
               <x:Null />
             </scg:List>
+            <scg:List x:TypeArguments="x:Object" x:Key="UseExisting" Capacity="1">
+              <InArgument x:TypeArguments="ugdm:GDriveRemoteItem">[Sheets_variable]</InArgument>
+            </scg:List>
           </usau:BackupSlot.BackupValues>
         </usau:BackupSlot>
       </uga:WriteCellConnections.FileIdBackup>
       <uga:WriteCellConnections.Item>
-        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID1}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" DriveId="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" Existing="[Sheets_variable]" InputMode="UseExisting">
-          <ugam:DriveItemArgument.FullPathHint>
-            <InArgument x:TypeArguments="x:String">
-              <Literal x:TypeArguments="x:String" Value="" />
-            </InArgument>
-          </ugam:DriveItemArgument.FullPathHint>
+        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID1}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" FriendlyName="Publication-AID-Project-Centralized-Data" FullPathHint="My Drive/DO NOT DELETE/Publication-AID-Project-Centralized-Data" InputMode="Browse">
+          <ugam:DriveItemArgument.DriveId>
+            <InArgument x:TypeArguments="x:String" />
+          </ugam:DriveItemArgument.DriveId>
           <ugam:DriveItemArgument.ParentIdFullPathHint>
             <InArgument x:TypeArguments="x:String">
               <Literal x:TypeArguments="x:String" Value="" />
@@ -326,7 +322,7 @@
                         </uix:TargetAnchorable>
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="510.4,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                    <Delay Duration="00:00:01.0050000" sap:VirtualizedContainerService.HintSize="510.4,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
                     <uix:NGetText DisplayName="Get Text 'Filter refine'" sap:VirtualizedContainerService.HintSize="510.4,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="bfda5a98-75ba-4ad2-a3ed-f5f9b90aad45" TextString="[str_results]" Version="V3">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.scopus.com/sources.uri" CvTextArea="547, 726, 94, 26" CvType="AnyWordGroup" DesignTimeRectangle="549, 721, 94, 38" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'1 result'" FullSelectorArgument="&lt;webctrl id='resultCount' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='resultCount' tag='SPAN' type='' class='' /&gt;" Guid="5ce0578c-00f7-4a25-9b8c-e7fab015e67d" InformativeScreenshot="90fe4688f9bc0d7f469f6fee1650a89f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Scopus preview - Scopus - Sources' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
@@ -339,25 +335,26 @@
                       </uix:NGetText.Target>
                     </uix:NGetText>
                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510.4,144" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[str_number +  &quot;  &quot;  + str_results]" />
-                    <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" AuthScopesInvalid="False" Cell="[&quot;G&quot; + int_counter.ToString]" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="510.4,308.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_1" ItemSelectionMode="UseExisting" RangeLocation="Sheet1" Spreadsheet="[Sheets_variable]" UseConnectionService="True" WhatToWrite="[str_results]">
+                    <uga:WriteCellConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Publication-AID-Project-Centralized-Data" BrowserItemId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" Cell="[&quot;G&quot; + int_counter.ToString]" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="510.4,308.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_1" ItemSelectionMode="Browse" RangeLocation="Sheet1" UseConnectionService="True" WhatToWrite="[str_results]">
                       <uga:WriteCellConnections.FileIdBackup>
-                        <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID2" StoredValue="UseExisting">
+                        <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID2" StoredValue="Browse">
                           <usau:BackupSlot.BackupValues>
                             <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="3">
                               <x:Null />
                               <x:Null />
                               <x:Null />
                             </scg:List>
+                            <scg:List x:TypeArguments="x:Object" x:Key="UseExisting" Capacity="1">
+                              <InArgument x:TypeArguments="ugdm:GDriveRemoteItem">[Sheets_variable]</InArgument>
+                            </scg:List>
                           </usau:BackupSlot.BackupValues>
                         </usau:BackupSlot>
                       </uga:WriteCellConnections.FileIdBackup>
                       <uga:WriteCellConnections.Item>
-                        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID2}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" DriveId="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" Existing="[Sheets_variable]" InputMode="UseExisting">
-                          <ugam:DriveItemArgument.FullPathHint>
-                            <InArgument x:TypeArguments="x:String">
-                              <Literal x:TypeArguments="x:String" Value="" />
-                            </InArgument>
-                          </ugam:DriveItemArgument.FullPathHint>
+                        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID2}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" FriendlyName="Publication-AID-Project-Centralized-Data" FullPathHint="My Drive/DO NOT DELETE/Publication-AID-Project-Centralized-Data" InputMode="Browse">
+                          <ugam:DriveItemArgument.DriveId>
+                            <InArgument x:TypeArguments="x:String" />
+                          </ugam:DriveItemArgument.DriveId>
                           <ugam:DriveItemArgument.ParentIdFullPathHint>
                             <InArgument x:TypeArguments="x:String">
                               <Literal x:TypeArguments="x:String" Value="" />

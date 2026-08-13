@@ -7,7 +7,8 @@
     "UiPath.GSuite.Activities": "[3.10.10]",
     "UiPath.System.Activities": "[26.6.2]",
     "UiPath.Testing.Activities": "[23.10.1]",
-    "UiPath.UIAutomation.Activities": "[23.10.7]"
+    "UiPath.UIAutomation.Activities": "[23.10.7]",
+    "UiPath.WebAPI.Activities": "[2.5.2]"
   },
   "webServices": [],
   "entitiesStores": [],
