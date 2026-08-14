@@ -133,7 +133,18 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="683.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Inside Scopus Workflow&quot;]" />
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="683.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Reading CFR data Sheet&quot;]" />
-    <uga:ReadRangeConnections x:TypeArguments="sd:DataTable" ColumnNames="{x:Array Type=x:String}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Publication-AID-Project-Centralized-Data" BrowserItemId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="683.2,257.6" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_3" ItemSelectionMode="Browse" Range="Sheet1" ReadAs="Values" Result="[dt_cfr_data]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+    <uga:ReadRangeConnections x:TypeArguments="sd:DataTable" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Publication-AID-Project-Centralized-Data" BrowserItemId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="683.2,257.6" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_3" ItemSelectionMode="Browse" Range="Sheet1" ReadAs="Values" Result="[dt_cfr_data]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+      <uga:ReadRangeConnections.ColumnNames>
+        <x:Array Type="x:String">
+          <x:String>Sl.No</x:String>
+          <x:String>Full Journal</x:String>
+          <x:String>Print-ISSN</x:String>
+          <x:String>E-ISSN</x:String>
+          <x:String>Publisher</x:String>
+          <x:String>Country</x:String>
+          <x:String>Scopus-Result</x:String>
+        </x:Array>
+      </uga:ReadRangeConnections.ColumnNames>
       <uga:ReadRangeConnections.FileIdBackup>
         <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="Browse">
           <usau:BackupSlot.BackupValues>

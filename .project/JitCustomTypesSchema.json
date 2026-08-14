@@ -458,6 +458,650 @@
         "hash": "ReadRangeConnections`1_2|DataTable|wpTBCeLPNXWKJfhoFlEJa6Uim377r7IFBpridVL52fA",
         "assemblyName": "Studio.Generated.TypedDataTable8"
       }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 9,
+        "idRef": "ReadRangeConnections`1_1",
+        "hash": "ReadRangeConnections`1_1|DataTable|cTlPDl2xlYQ0V0uDl4JBNLuNZ1KPv9Nm9BmNCujs",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Sl.No",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Full Journal",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Print-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "E-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Publisher",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Country",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable9",
+        "hash": "ReadRangeConnections`1_1|DataTable|cxNn1Gf6Fv6rwy8z3L7fL7CjZdD387YKnRJ7Hhd15hU",
+        "assemblyName": "Studio.Generated.TypedDataTable9"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 10,
+        "idRef": "ReadRangeConnections`1_1",
+        "hash": "ReadRangeConnections`1_1|DataTable|3rrcVbkZvsuKLdaGdMolLl4FwzSZav8ZMViq5XBxwM",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Column A",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column B",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column C",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column D",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column E",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column F",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column G",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column H",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column I",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column J",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column K",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column L",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column M",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column N",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column O",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column P",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column Q",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column R",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column S",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column T",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column U",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column V",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column W",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column X",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column Y",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column Z",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable10",
+        "hash": "ReadRangeConnections`1_1|DataTable|fdxvMQudf70iKLdtvwWZ6wSrCgTarsvqRZ8XUkkeY",
+        "assemblyName": "Studio.Generated.TypedDataTable10"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 11,
+        "idRef": "ReadRangeConnections`1_1",
+        "hash": "ReadRangeConnections`1_1|DataTable|swYBPRz6zwTHmfu6hncRyjA41dI3NpFd6FMIAJWiXk",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Sl.No",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Full Journal",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Print-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "E-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Publisher",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Country",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Scopus-Result",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Quartile",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "SJR value",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable11",
+        "hash": "ReadRangeConnections`1_1|DataTable|ctt9mVUhQ8oxy4lb11R9KN9Mz9vWNDHcTy1Sbfj5pk",
+        "assemblyName": "Studio.Generated.TypedDataTable11"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 12,
+        "idRef": "ReadRangeConnections`1_1",
+        "hash": "ReadRangeConnections`1_1|DataTable|yXRdp3Z95Y0x5ElX3hfJRhjhNTbjeCnj0d4s2OoDIKE",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Sl.No",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Full Journal",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Print-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "E-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Publisher",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Country",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Scopus-Result",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Quartile",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "SJR value",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "H-Index",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Coverage",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable12",
+        "hash": "ReadRangeConnections`1_1|DataTable|qfU4baI2RORAySFxRW1D8HGHXgemuy0eKrv0LfZSE",
+        "assemblyName": "Studio.Generated.TypedDataTable12"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 13,
+        "idRef": "ReadRangeConnections`1_2",
+        "hash": "ReadRangeConnections`1_2|DataTable|yXRdp3Z95Y0x5ElX3hfJRhjhNTbjeCnj0d4s2OoDIKE",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Sl.No",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Full Journal",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Print-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "E-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Publisher",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Country",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Scopus-Result",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Quartile",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "SJR value",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "H-Index",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Coverage",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable13",
+        "hash": "ReadRangeConnections`1_2|DataTable|qfU4baI2RORAySFxRW1D8HGHXgemuy0eKrv0LfZSE",
+        "assemblyName": "Studio.Generated.TypedDataTable13"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 14,
+        "idRef": "ReadRangeConnections`1_2",
+        "hash": "ReadRangeConnections`1_2|DataTable|VspdPUzbm1sDbvDZyw35tXrEfwkyA1RVXy9gbWPE4Hc",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Sl.No",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Full Journal",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Print-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "E-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Publisher",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Country",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Scopus-Result",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column H",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "SJR value",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Quartile",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "H-Index",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Coverage",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable14",
+        "hash": "ReadRangeConnections`1_2|DataTable|IkfKWaYtJHFfeA2Je8jS5FtYd8LvFbaiyPrtCVVa8uY",
+        "assemblyName": "Studio.Generated.TypedDataTable14"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 15,
+        "idRef": "ReadRangeConnections`1_1",
+        "hash": "ReadRangeConnections`1_1|DataTable|ejE3vKki0TzFxEAsxKDAbxK3ZlQw4FpPFQuGh6M2ybI",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Sl.No",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Full Journal",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Print-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "E-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Publisher",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Country",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Scopus-Result",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Index",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "SJR value",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Quartile",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "H-Index",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Coverage",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable15",
+        "hash": "ReadRangeConnections`1_1|DataTable|U5PU0IJgT1HOHPeV7q4GyhsI3Qji4dq7ZtRZz69Ic",
+        "assemblyName": "Studio.Generated.TypedDataTable15"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 16,
+        "idRef": "ReadRangeConnections`1_2",
+        "hash": "ReadRangeConnections`1_2|DataTable|3rrcVbkZvsuKLdaGdMolLl4FwzSZav8ZMViq5XBxwM",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Column A",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column B",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column C",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column D",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column E",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column F",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column G",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column H",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column I",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column J",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column K",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column L",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column M",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column N",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column O",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column P",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column Q",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column R",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column S",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column T",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column U",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column V",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column W",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column X",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column Y",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column Z",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable16",
+        "hash": "ReadRangeConnections`1_2|DataTable|fdxvMQudf70iKLdtvwWZ6wSrCgTarsvqRZ8XUkkeY",
+        "assemblyName": "Studio.Generated.TypedDataTable16"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 17,
+        "idRef": "ReadRangeConnections`1_2",
+        "hash": "ReadRangeConnections`1_2|DataTable|ejE3vKki0TzFxEAsxKDAbxK3ZlQw4FpPFQuGh6M2ybI",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Sl.No",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Full Journal",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Print-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "E-ISSN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Publisher",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Country",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Scopus-Result",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Index",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "SJR value",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Quartile",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "H-Index",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Coverage",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable17",
+        "hash": "ReadRangeConnections`1_2|DataTable|U5PU0IJgT1HOHPeV7q4GyhsI3Qji4dq7ZtRZz69Ic",
+        "assemblyName": "Studio.Generated.TypedDataTable17"
+      }
     }
   ]
 }
