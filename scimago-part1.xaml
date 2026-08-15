@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="scimago_part1" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1391.2,7823.999999999999" sap2010:WorkflowViewState.IdRef="scimago_part1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable15" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugdm="clr-namespace:UiPath.GSuite.Drive.Models;assembly=UiPath.GSuite" xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="scimago_part1" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1391.2000000000003,7079.2" sap2010:WorkflowViewState.IdRef="scimago_part1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable18" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugdm="clr-namespace:UiPath.GSuite.Drive.Models;assembly=UiPath.GSuite" xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -123,9 +123,13 @@
       <AssemblyReference>Studio.Generated.TypedDataTable14</AssemblyReference>
       <AssemblyReference>Studio.Generated.TypedDataTable10</AssemblyReference>
       <AssemblyReference>Studio.Generated.TypedDataTable15</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable10</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable18</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable16</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable19</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="scimago-part1" sap:VirtualizedContainerService.HintSize="1401.6,7759.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="scimago-part1" sap:VirtualizedContainerService.HintSize="1401.6,7014.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="count" />
       <Variable x:TypeArguments="x:String" Default="0" Name="quartile" />
@@ -141,8 +145,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1339.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="{x:Null}" Message="[&quot;Inside Scimago Workflow&quot;]" />
-    <uga:ReadRangeConnections x:TypeArguments="sd:DataTable15" ConnectionAccountName="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Publication-AID-Project-Centralized-Data" BrowserItemId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" ContinueOnError="{x:Null}" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="1339.2,257.6" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="Browse" ManualEntrySpreadsheetId="{x:Null}" Range="Sheet1" RangeInformation="{x:Null}" ReadAs="[UiPath.GSuite.Sheets.Enums.ValuesType.Values]" Result="[cfr]" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1339.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Inside Scimago Workflow&quot;]" />
+    <uga:ReadRangeConnections x:TypeArguments="sd:DataTable18" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Publication-AID-Project-Centralized-Data" BrowserItemId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="1339.2,257.6" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="Browse" Range="Sheet1" ReadAs="[UiPath.GSuite.Sheets.Enums.ValuesType.Values]" Result="[cfr]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
       <uga:ReadRangeConnections.ColumnNames>
         <x:Array Type="x:String">
           <x:String>Sl.No</x:String>
@@ -157,6 +161,7 @@
           <x:String>Quartile</x:String>
           <x:String>H-Index</x:String>
           <x:String>Coverage</x:String>
+          <x:String>URL</x:String>
         </x:Array>
       </uga:ReadRangeConnections.ColumnNames>
       <uga:ReadRangeConnections.FileIdBackup>
@@ -174,102 +179,95 @@
         </usau:BackupSlot>
       </uga:ReadRangeConnections.FileIdBackup>
       <uga:ReadRangeConnections.Item>
-        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID0}" ConnectionDescriptor="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" Existing="{x:Null}" FriendlyName="Publication-AID-Project-Centralized-Data" FullPathHint="My Drive/DO NOT DELETE/Publication-AID-Project-Centralized-Data" IdOrUrl="{x:Null}" InputMode="Browse">
+        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID0}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" FriendlyName="Publication-AID-Project-Centralized-Data" FullPathHint="My Drive/DO NOT DELETE/Publication-AID-Project-Centralized-Data" InputMode="Browse" ParentIdFullPathHint="[Nothing]">
           <ugam:DriveItemArgument.DriveId>
             <InArgument x:TypeArguments="x:String" />
           </ugam:DriveItemArgument.DriveId>
-          <ugam:DriveItemArgument.ParentIdFullPathHint>
-            <InArgument x:TypeArguments="x:String">
-              <Literal x:TypeArguments="x:String">
-                <Literal.Result>
-                  <OutArgument x:TypeArguments="x:String" />
-                </Literal.Result></Literal>
-            </InArgument>
-          </ugam:DriveItemArgument.ParentIdFullPathHint>
         </ugam:DriveItemArgument>
       </uga:ReadRangeConnections.Item>
       <uga:ReadRangeConnections.RangeMetadata>
         <ugsm:RangeMetadataSlim ColumnStart="1" RangeType="Range" />
       </uga:ReadRangeConnections.RangeMetadata>
     </uga:ReadRangeConnections>
-    <Sequence sap:VirtualizedContainerService.HintSize="1339.2,769.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1339.2,24.8" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,881.6" sap2010:WorkflowViewState.IdRef="Sequence_16">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence sap:VirtualizedContainerService.HintSize="449.6,769.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uga:WriteCellConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Publication-AID-Project-Centralized-Data" Cell="I1" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="387.2,308.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_1" ItemSelectionMode="Browse" RangeLocation="Sheet1" UseConnectionService="True" WhatToWrite="[&quot;SJR value&quot;]">
+              <uga:WriteCellConnections.BrowserItemId>
+                <InArgument x:TypeArguments="x:String" x:Name="__ReferenceID1">
+                  <Literal x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Literal`1_1">
+                    <Literal.Result>
+                      <OutArgument x:TypeArguments="x:String" />
+                    </Literal.Result>https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk</Literal>
+                </InArgument>
+              </uga:WriteCellConnections.BrowserItemId>
+              <uga:WriteCellConnections.FileIdBackup>
+                <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID2" StoredValue="Browse">
+                  <usau:BackupSlot.BackupValues>
+                    <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="3">
+                      <InArgument x:TypeArguments="x:String">https://docs.google.com/spreadsheets/d/13N1QzG_dFMEo9RR4_uUS6gpOArbC91aNze0-HWqIP8w/edit?usp=drivesdk</InArgument>
+                      <InArgument x:TypeArguments="x:String" />
+                      <InArgument x:TypeArguments="x:String">Copy of 08/09/2026 09:15:17 CFR-Data</InArgument>
+                    </scg:List>
+                    <scg:List x:TypeArguments="x:Object" x:Key="UseExisting" Capacity="1">
+                      <InArgument x:TypeArguments="ugdm:GDriveRemoteItem">[Sheet_variable]</InArgument>
+                    </scg:List>
+                  </usau:BackupSlot.BackupValues>
+                </usau:BackupSlot>
+              </uga:WriteCellConnections.FileIdBackup>
+              <uga:WriteCellConnections.Item>
+                <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID2}" BrowserId="{x:Reference __ReferenceID1}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" FriendlyName="Publication-AID-Project-Centralized-Data" FullPathHint="My Drive/DO NOT DELETE/Publication-AID-Project-Centralized-Data" InputMode="Browse" ParentIdFullPathHint="[Nothing]">
+                  <ugam:DriveItemArgument.DriveId>
+                    <InArgument x:TypeArguments="x:String" />
+                  </ugam:DriveItemArgument.DriveId>
+                </ugam:DriveItemArgument>
+              </uga:WriteCellConnections.Item>
+            </uga:WriteCellConnections>
+            <uga:WriteCellConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Publication-AID-Project-Centralized-Data" BrowserItemId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" Cell="J1" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="387.2,308.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_2" ItemSelectionMode="Browse" RangeLocation="Sheet1" UseConnectionService="True" WhatToWrite="[&quot;Quartile&quot;]">
+              <uga:WriteCellConnections.FileIdBackup>
+                <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID3" StoredValue="Browse">
+                  <usau:BackupSlot.BackupValues>
+                    <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="3">
+                      <InArgument x:TypeArguments="x:String">https://docs.google.com/spreadsheets/d/13N1QzG_dFMEo9RR4_uUS6gpOArbC91aNze0-HWqIP8w/edit?usp=drivesdk</InArgument>
+                      <InArgument x:TypeArguments="x:String" />
+                      <InArgument x:TypeArguments="x:String">Copy of 08/09/2026 09:15:17 CFR-Data</InArgument>
+                    </scg:List>
+                    <scg:List x:TypeArguments="x:Object" x:Key="UseExisting" Capacity="1">
+                      <InArgument x:TypeArguments="ugdm:GDriveRemoteItem">[Sheet_variable]</InArgument>
+                    </scg:List>
+                  </usau:BackupSlot.BackupValues>
+                </usau:BackupSlot>
+              </uga:WriteCellConnections.FileIdBackup>
+              <uga:WriteCellConnections.Item>
+                <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID3}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" FriendlyName="Publication-AID-Project-Centralized-Data" FullPathHint="My Drive/DO NOT DELETE/Publication-AID-Project-Centralized-Data" InputMode="Browse" ParentIdFullPathHint="[Nothing]">
+                  <ugam:DriveItemArgument.DriveId>
+                    <InArgument x:TypeArguments="x:String" />
+                  </ugam:DriveItemArgument.DriveId>
+                </ugam:DriveItemArgument>
+              </uga:WriteCellConnections.Item>
+            </uga:WriteCellConnections>
+          </Sequence>
+        </Sequence>
+      </ui:CommentOut.Body>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uga:WriteCellConnections ConnectionAccountName="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Publication-AID-Project-Centralized-Data" Cell="I1" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" ContinueOnError="{x:Null}" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="387.2,308.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_1" ItemSelectionMode="Browse" ManualEntrySpreadsheetId="{x:Null}" RangeLocation="Sheet1" Spreadsheet="{x:Null}" UseConnectionService="True" WhatToWrite="[&quot;SJR value&quot;]">
-        <uga:WriteCellConnections.BrowserItemId>
-          <InArgument x:TypeArguments="x:String" x:Name="__ReferenceID1">
-            <Literal x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Literal`1_1">
-              <Literal.Result>
-                <OutArgument x:TypeArguments="x:String" />
-              </Literal.Result>https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk</Literal>
-          </InArgument>
-        </uga:WriteCellConnections.BrowserItemId>
-        <uga:WriteCellConnections.FileIdBackup>
-          <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID2" StoredValue="Browse">
-            <usau:BackupSlot.BackupValues>
-              <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="3">
-                <InArgument x:TypeArguments="x:String">https://docs.google.com/spreadsheets/d/13N1QzG_dFMEo9RR4_uUS6gpOArbC91aNze0-HWqIP8w/edit?usp=drivesdk</InArgument>
-                <InArgument x:TypeArguments="x:String" />
-                <InArgument x:TypeArguments="x:String">Copy of 08/09/2026 09:15:17 CFR-Data</InArgument>
-              </scg:List>
-              <scg:List x:TypeArguments="x:Object" x:Key="UseExisting" Capacity="1">
-                <InArgument x:TypeArguments="ugdm:GDriveRemoteItem">[Sheet_variable]</InArgument>
-              </scg:List>
-            </usau:BackupSlot.BackupValues>
-          </usau:BackupSlot>
-        </uga:WriteCellConnections.FileIdBackup>
-        <uga:WriteCellConnections.Item>
-          <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID2}" BrowserId="{x:Reference __ReferenceID1}" ConnectionDescriptor="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" Existing="{x:Null}" FriendlyName="Publication-AID-Project-Centralized-Data" FullPathHint="My Drive/DO NOT DELETE/Publication-AID-Project-Centralized-Data" IdOrUrl="{x:Null}" InputMode="Browse">
-            <ugam:DriveItemArgument.DriveId>
-              <InArgument x:TypeArguments="x:String" />
-            </ugam:DriveItemArgument.DriveId>
-            <ugam:DriveItemArgument.ParentIdFullPathHint>
-              <InArgument x:TypeArguments="x:String">
-                <Literal x:TypeArguments="x:String">
-                  <Literal.Result>
-                    <OutArgument x:TypeArguments="x:String" />
-                  </Literal.Result></Literal>
-              </InArgument>
-            </ugam:DriveItemArgument.ParentIdFullPathHint>
-          </ugam:DriveItemArgument>
-        </uga:WriteCellConnections.Item>
-      </uga:WriteCellConnections>
-      <uga:WriteCellConnections ConnectionAccountName="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Publication-AID-Project-Centralized-Data" BrowserItemId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" Cell="J1" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" ContinueOnError="{x:Null}" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="387.2,308.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_2" ItemSelectionMode="Browse" ManualEntrySpreadsheetId="{x:Null}" RangeLocation="Sheet1" Spreadsheet="{x:Null}" UseConnectionService="True" WhatToWrite="[&quot;Quartile&quot;]">
-        <uga:WriteCellConnections.FileIdBackup>
-          <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID3" StoredValue="Browse">
-            <usau:BackupSlot.BackupValues>
-              <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="3">
-                <InArgument x:TypeArguments="x:String">https://docs.google.com/spreadsheets/d/13N1QzG_dFMEo9RR4_uUS6gpOArbC91aNze0-HWqIP8w/edit?usp=drivesdk</InArgument>
-                <InArgument x:TypeArguments="x:String" />
-                <InArgument x:TypeArguments="x:String">Copy of 08/09/2026 09:15:17 CFR-Data</InArgument>
-              </scg:List>
-              <scg:List x:TypeArguments="x:Object" x:Key="UseExisting" Capacity="1">
-                <InArgument x:TypeArguments="ugdm:GDriveRemoteItem">[Sheet_variable]</InArgument>
-              </scg:List>
-            </usau:BackupSlot.BackupValues>
-          </usau:BackupSlot>
-        </uga:WriteCellConnections.FileIdBackup>
-        <uga:WriteCellConnections.Item>
-          <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID3}" ConnectionDescriptor="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" Existing="{x:Null}" FriendlyName="Publication-AID-Project-Centralized-Data" FullPathHint="My Drive/DO NOT DELETE/Publication-AID-Project-Centralized-Data" IdOrUrl="{x:Null}" InputMode="Browse">
-            <ugam:DriveItemArgument.DriveId>
-              <InArgument x:TypeArguments="x:String" />
-            </ugam:DriveItemArgument.DriveId>
-            <ugam:DriveItemArgument.ParentIdFullPathHint>
-              <InArgument x:TypeArguments="x:String">
-                <Literal x:TypeArguments="x:String">
-                  <Literal.Result>
-                    <OutArgument x:TypeArguments="x:String" />
-                  </Literal.Result></Literal>
-              </InArgument>
-            </ugam:DriveItemArgument.ParentIdFullPathHint>
-          </ugam:DriveItemArgument>
-        </uga:WriteCellConnections.Item>
-      </uga:WriteCellConnections>
-    </Sequence>
+    </ui:CommentOut>
     <Assign sap:VirtualizedContainerService.HintSize="1339.2,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
@@ -278,7 +276,7 @@
         <InArgument x:TypeArguments="x:Int32">2</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1339.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="{x:Null}" Message="[&quot;Opening Scimago Website&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1339.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Opening Scimago Website&quot;]" />
     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1339.2,24.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,172" sap2010:WorkflowViewState.IdRef="Sequence_4">
@@ -297,7 +295,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Use Browser Chrome: Scimago Journal &amp; Country Rank" sap:VirtualizedContainerService.HintSize="1339.2,5806.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="{x:Null}" InteractionMode="DebuggerApi" IsIncognito="{x:Null}" OpenMode="{x:Null}" OutUiElement="{x:Null}" ScopeGuid="61fab497-057c-4506-84db-0106cc2af56a" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Scimago Journal &amp; Country Rank" sap:VirtualizedContainerService.HintSize="1339.2,5806.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="61fab497-057c-4506-84db-0106cc2af56a" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -309,7 +307,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[cfr]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1243.2,5474.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1" MaxIterations="{x:Null}" Values="{x:Null}">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[cfr]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1243.2,5474.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd1:DataRow">
                   <ActivityAction.Argument>
@@ -343,7 +341,7 @@
                         </scg:List>
                       </ui:MultipleAssign.AssignOperations>
                     </ui:MultipleAssign>
-                    <uix:NCheckState ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Check App State 'Enter Journal Title, IS…' (NCheckState)" Exists="[result]" sap:VirtualizedContainerService.HintSize="1166.4,1204.8" sap2010:WorkflowViewState.IdRef="NCheckState_2" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" Result="{x:Null}" ScopeIdentifier="61fab497-057c-4506-84db-0106cc2af56a" Timeout="{x:Null}" Version="V3">
+                    <uix:NCheckState DisplayName="Check App State 'Enter Journal Title, IS…' (NCheckState)" Exists="[result]" sap:VirtualizedContainerService.HintSize="1166.4,1204.8" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="61fab497-057c-4506-84db-0106cc2af56a" Version="V3">
                       <uix:NCheckState.IfExists>
                         <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="472.8,986.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
                           <sap:WorkflowViewStateService.ViewState>
@@ -359,7 +357,7 @@
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <uix:NTypeInto ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickBeforeMode="Single" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into 'Enter Journal'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="61fab497-057c-4506-84db-0106cc2af56a" SecureText="{x:Null}" Text="[CurrentRow(&quot;E-ISSN&quot;).toString]" Timeout="{x:Null}" Version="V3">
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Enter Journal'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="61fab497-057c-4506-84db-0106cc2af56a" Text="[CurrentRow(&quot;E-ISSN&quot;).toString]" Version="V3">
                                   <uix:NTypeInto.Target>
                                     <uix:TargetAnchorable BrowserURL="https://www.scimagojr.com/" DesignTimeRectangle="516, 772, 828, 60" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Enter Journal'" FullSelectorArgument="&lt;webctrl id='searchinput' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='searchinput' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="9e2a0bb8-bde2-41c5-b6dc-5f2619203816" InformativeScreenshot="92bbfebd81be5711d3e00b8282239058.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Scimago Journal &amp;amp; Country Rank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
@@ -389,7 +387,7 @@
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <uix:NTypeInto ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickBeforeMode="Single" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into 'Enter Journal'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="61fab497-057c-4506-84db-0106cc2af56a" SecureText="{x:Null}" Text="[CurrentRow(&quot;Print-ISSN&quot;).toString]" Timeout="{x:Null}" Version="V3">
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Enter Journal'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="61fab497-057c-4506-84db-0106cc2af56a" Text="[CurrentRow(&quot;Print-ISSN&quot;).toString]" Version="V3">
                                   <uix:NTypeInto.Target>
                                     <uix:TargetAnchorable BrowserURL="https://www.scimagojr.com/" DesignTimeRectangle="516, 772, 828, 60" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Enter Journal'" FullSelectorArgument="&lt;webctrl id='searchinput' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='searchinput' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="62e22c84-a67a-4c10-8e48-4f917e59b24a" InformativeScreenshot="92bbfebd81be5711d3e00b8282239058.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Scimago Journal &amp;amp; Country Rank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
@@ -434,7 +432,7 @@
                         </uix:TargetAnchorable>
                       </uix:NCheckState.Target>
                     </uix:NCheckState>
-                    <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'INPUT searchbutton' (NClick)" sap:VirtualizedContainerService.HintSize="1166.4,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="61fab497-057c-4506-84db-0106cc2af56a" Timeout="{x:Null}" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT searchbutton' (NClick)" sap:VirtualizedContainerService.HintSize="1166.4,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="61fab497-057c-4506-84db-0106cc2af56a" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.scimagojr.com/" DesignTimeRectangle="1343, 772, 60, 60" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'INPUT searchbutton'" FullSelectorArgument="&lt;webctrl id='searchbutton' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='searchbutton' tag='INPUT' type='submit' class='' aaname='' /&gt;" Guid="e8201a97-9be7-43be-93bf-9c78ac2f8e62" InformativeScreenshot="3844ad135a124bb0eaad0b64b2a8eda6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Scimago Journal &amp;amp; Country Rank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -445,7 +443,7 @@
                         </uix:TargetAnchorable>
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <uix:NGetText ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Get Text 'No results found'" sap:VirtualizedContainerService.HintSize="1166.4,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="61fab497-057c-4506-84db-0106cc2af56a" ScrapingOptions="{x:Null}" TextString="[results]" Timeout="{x:Null}" Version="V3" WordsInfo="{x:Null}">
+                    <uix:NGetText DisplayName="Get Text 'No results found'" sap:VirtualizedContainerService.HintSize="1166.4,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="61fab497-057c-4506-84db-0106cc2af56a" TextString="[results]" Version="V3">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.scimagojr.com/journalsearch.php?q=0104-1257" CvElementArea="184, 764, 1613, 105" CvType="InputBox" DesignTimeRectangle="160, 812, 1600, 300" DesignTimeScaleFactor="1.25" FriendlyName="'No results found'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='journaldescription colblock' tag='DIV' aaname='           &amp;#x9; &amp;#x9; ' /&gt;" Guid="68459844-873c-4e30-a4b2-bf73257ee050" InformativeScreenshot="f6637f8ec6783604d675de5526d28ed1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SJR - Journal Search' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -470,7 +468,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Gender and DevelopmentU…' (NClick)" sap:VirtualizedContainerService.HintSize="1089.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="61fab497-057c-4506-84db-0106cc2af56a" Timeout="{x:Null}" Version="V3">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Gender and DevelopmentU…' (NClick)" sap:VirtualizedContainerService.HintSize="1089.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="61fab497-057c-4506-84db-0106cc2af56a" Version="V3">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable BrowserURL="https://www.scimagojr.com/journalsearch.php?q=2572-3618" CvTextArea="230, 874, 17, 17" CvTextArgument="71" CvType="Text" DesignTimeRectangle="227, 1065, 25, 25" DesignTimeScaleFactor="1.25" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Comparative Literature: East and WestUnited KingdomInforma *' tag='IMG' /&gt;" FuzzyAccuracy="0.7" FuzzySelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Comparative Literature: East and WestUnited KingdomInforma *' tag='IMG' type='' class='' /&gt;" Guid="bb80700a-491d-46d3-afef-6816c7a6fb74" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFCSURBVEhL7ZTNSsNAFIX7HnWh0B9tUZqKCxUU9EncWBeNi7ab6kofQ7GFbkQfxoJdWWJqEhJI8hBHzkAh3lKymSkusvgImVzmm3NzmVKaptg0JbmwCQqpUQqpUf6n9GM6xf3DIwbDu1xYx3q5hyRX+vr2juOLS1gnp2uptyxs1erYbjSVWO4hyZVGUQTP9/Htuis4joPP2QxXnRuUK1UlZmK5hyRXuo4kSeAuFrju2ihXa0q81z40K/2az9Ht9ZWQYiZmq41Jfd9Xop1GE3avrxKz1UakbCkTUljZP1BPvnOd/1i7NI5jlYgtZUIKmXj5XbtUDg1byoTZGu1SOTQ8AA+SrdEqZQs79u2foWGrZZ1W6dPLCLtWW4mXQyNryI/n4ejsXM+NxLt0NJkgCIKVb1nCMMTzeKzn7jVBITVKITXKLwHHy+Al7AkpAAAAAElFTkSuQmCC" InformativeScreenshot="8e0bb344e9cda6b09d6b9fa94c24c5dd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SJR - Journal Search' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
                                 <uix:TargetAnchorable.Anchors>
@@ -488,7 +486,7 @@
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NClick>
                           <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="1089.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                          <uix:NCheckState ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Check App State 'SJR 2025'" Exists="{x:Null}" sap:VirtualizedContainerService.HintSize="1089.6,1033.6" sap2010:WorkflowViewState.IdRef="NCheckState_1" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" Result="{x:Null}" ScopeIdentifier="61fab497-057c-4506-84db-0106cc2af56a" Timeout="{x:Null}" Version="V3">
+                          <uix:NCheckState DisplayName="Check App State 'SJR 2025'" sap:VirtualizedContainerService.HintSize="1089.6,1033.6" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="61fab497-057c-4506-84db-0106cc2af56a" Version="V3">
                             <uix:NCheckState.IfExists>
                               <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,701.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
                                 <sap:WorkflowViewStateService.ViewState>
@@ -496,7 +494,7 @@
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <uix:NGetText ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Get Text '0.356' (NGetText)" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="61fab497-057c-4506-84db-0106cc2af56a" ScrapingOptions="{x:Null}" TextString="[sjrtext]" Timeout="{x:Null}" Version="V3" WordsInfo="{x:Null}">
+                                <uix:NGetText DisplayName="Get Text '0.356' (NGetText)" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="61fab497-057c-4506-84db-0106cc2af56a" TextString="[sjrtext]" Version="V3">
                                   <uix:NGetText.Target>
                                     <uix:TargetAnchorable BrowserURL="https://www.scimagojr.com/journalsearch.php?q=21100800449&amp;tip=sid&amp;clean=0" DesignTimeRectangle="260, 559, 695, 180" DesignTimeScaleFactor="1.25" FriendlyName="'SJR 20250.415 Q1'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='5' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='cuadrado content-hindex' tag='DIV' aaname='' /&gt;" Guid="0d5fcbe3-f534-4816-ac2e-1d5f1502db54" InformativeScreenshot="10762851a3b2742b5aa7de980e13e047.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Critical Studies in Television' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
@@ -513,7 +511,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </uix:NGetText>
-                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,144" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="{x:Null}" Message="[sjrtext]" />
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,144" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[sjrtext]" />
                                 <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_2">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:String">[sjrvalue]</OutArgument>
@@ -573,8 +571,8 @@
                                     </scg:List>
                                   </ui:MultipleAssign.AssignOperations>
                                 </ui:MultipleAssign>
-                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478.4,144" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="{x:Null}" Message="[&quot;Qcard Missing&quot;]" />
-                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478.4,144" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="{x:Null}" Message="[sjrtext]" />
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478.4,144" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;Qcard Missing&quot;]" />
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478.4,144" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[sjrtext]" />
                                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478.4,144" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[hindex]" />
                               </Sequence>
                             </uix:NCheckState.IfNotExists>
@@ -623,8 +621,8 @@
                         </Sequence>
                       </If.Else>
                     </If>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1166.4,144" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="{x:Null}" Message="[sjrvalue]" />
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1166.4,144" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="{x:Null}" Message="[quartile]" />
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1166.4,144" sap2010:WorkflowViewState.IdRef="LogMessage_9" Message="[sjrvalue]" />
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1166.4,144" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[quartile]" />
                     <Sequence sap:VirtualizedContainerService.HintSize="1166.4,769.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -632,7 +630,7 @@
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uga:WriteCellConnections ConnectionAccountName="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Publication-AID-Project-Centralized-Data" BrowserItemId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" Cell="[&quot;I&quot; + count.ToString]" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" ContinueOnError="{x:Null}" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="387.2,308.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_5" ItemSelectionMode="Browse" ManualEntrySpreadsheetId="{x:Null}" RangeLocation="Sheet1" Spreadsheet="{x:Null}" UseConnectionService="True" WhatToWrite="[sjrvalue]">
+                      <uga:WriteCellConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Publication-AID-Project-Centralized-Data" BrowserItemId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" Cell="[&quot;I&quot; + count.ToString]" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="387.2,308.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_5" ItemSelectionMode="Browse" RangeLocation="Sheet1" UseConnectionService="True" WhatToWrite="[sjrvalue]">
                         <uga:WriteCellConnections.FileIdBackup>
                           <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID4" StoredValue="Browse">
                             <usau:BackupSlot.BackupValues>
@@ -648,22 +646,14 @@
                           </usau:BackupSlot>
                         </uga:WriteCellConnections.FileIdBackup>
                         <uga:WriteCellConnections.Item>
-                          <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID4}" ConnectionDescriptor="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" Existing="{x:Null}" FriendlyName="Publication-AID-Project-Centralized-Data" FullPathHint="My Drive/DO NOT DELETE/Publication-AID-Project-Centralized-Data" IdOrUrl="{x:Null}" InputMode="Browse">
+                          <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID4}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" FriendlyName="Publication-AID-Project-Centralized-Data" FullPathHint="My Drive/DO NOT DELETE/Publication-AID-Project-Centralized-Data" InputMode="Browse" ParentIdFullPathHint="[Nothing]">
                             <ugam:DriveItemArgument.DriveId>
                               <InArgument x:TypeArguments="x:String" />
                             </ugam:DriveItemArgument.DriveId>
-                            <ugam:DriveItemArgument.ParentIdFullPathHint>
-                              <InArgument x:TypeArguments="x:String">
-                                <Literal x:TypeArguments="x:String">
-                                  <Literal.Result>
-                                    <OutArgument x:TypeArguments="x:String" />
-                                  </Literal.Result></Literal>
-                              </InArgument>
-                            </ugam:DriveItemArgument.ParentIdFullPathHint>
                           </ugam:DriveItemArgument>
                         </uga:WriteCellConnections.Item>
                       </uga:WriteCellConnections>
-                      <uga:WriteCellConnections ConnectionAccountName="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Publication-AID-Project-Centralized-Data" BrowserItemId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" Cell="[&quot;J&quot; + count.ToString]" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" ContinueOnError="{x:Null}" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="387.2,308.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_6" ItemSelectionMode="Browse" ManualEntrySpreadsheetId="{x:Null}" RangeLocation="Sheet1" Spreadsheet="{x:Null}" UseConnectionService="True" WhatToWrite="[quartile]">
+                      <uga:WriteCellConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Publication-AID-Project-Centralized-Data" BrowserItemId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" Cell="[&quot;J&quot; + count.ToString]" ConnectionId="0483b823-47a6-477e-a140-8a97c497f210" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="387.2,308.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_6" ItemSelectionMode="Browse" RangeLocation="Sheet1" UseConnectionService="True" WhatToWrite="[quartile]">
                         <uga:WriteCellConnections.FileIdBackup>
                           <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID5" StoredValue="Browse">
                             <usau:BackupSlot.BackupValues>
@@ -679,18 +669,10 @@
                           </usau:BackupSlot>
                         </uga:WriteCellConnections.FileIdBackup>
                         <uga:WriteCellConnections.Item>
-                          <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID5}" ConnectionDescriptor="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" Existing="{x:Null}" FriendlyName="Publication-AID-Project-Centralized-Data" FullPathHint="My Drive/DO NOT DELETE/Publication-AID-Project-Centralized-Data" IdOrUrl="{x:Null}" InputMode="Browse">
+                          <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID5}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/1tDbu0LXF2psmo-Zk_741PYUlWlfIaI-mI5aFwzi16cc/edit?usp=drivesdk" ConnectionKey="0483b823-47a6-477e-a140-8a97c497f210" FriendlyName="Publication-AID-Project-Centralized-Data" FullPathHint="My Drive/DO NOT DELETE/Publication-AID-Project-Centralized-Data" InputMode="Browse" ParentIdFullPathHint="[Nothing]">
                             <ugam:DriveItemArgument.DriveId>
                               <InArgument x:TypeArguments="x:String" />
                             </ugam:DriveItemArgument.DriveId>
-                            <ugam:DriveItemArgument.ParentIdFullPathHint>
-                              <InArgument x:TypeArguments="x:String">
-                                <Literal x:TypeArguments="x:String">
-                                  <Literal.Result>
-                                    <OutArgument x:TypeArguments="x:String" />
-                                  </Literal.Result></Literal>
-                              </InArgument>
-                            </ugam:DriveItemArgument.ParentIdFullPathHint>
                           </ugam:DriveItemArgument>
                         </uga:WriteCellConnections.Item>
                       </uga:WriteCellConnections>
@@ -703,7 +685,7 @@
                         <InArgument x:TypeArguments="x:Int32">[count+1]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Journal Rankings'" sap:VirtualizedContainerService.HintSize="1166.4,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="61fab497-057c-4506-84db-0106cc2af56a" Timeout="{x:Null}" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Journal Rankings'" sap:VirtualizedContainerService.HintSize="1166.4,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="61fab497-057c-4506-84db-0106cc2af56a" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.scimagojr.com/journalsearch.php?q=2187-9036" DesignTimeRectangle="258, 249, 269, 40" DesignTimeScaleFactor="1.25" ElementType="Icon" FriendlyName="'IMG logo'" FullSelectorArgument="&lt;webctrl id='logo' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl id='logo' tag='IMG' type='' class='' aaname='SJR' /&gt;" Guid="8e02d315-a7d9-4a93-85c5-6584595a82fa" InformativeScreenshot="33f1f717ffa3a29d611b0dc835091b79.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SJR - Journal Search' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -734,6 +716,6 @@
         <uix:TargetApp Area="-9, -9, 1938, 1218" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="db39699eeb413d22296ff67073216c9d.jpg" Selector="&lt;html app='chrome.exe' title='Scimago Journal &amp;amp; Country Rank' /&gt;" Title="Scimago Journal &amp; Country Rank" Url="https://www.scimagojr.com/" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1339.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="{x:Null}" Message="[&quot;Exiting Scimago Workflow Part 1&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1339.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_13" Message="[&quot;Exiting Scimago Workflow Part 1&quot;]" />
   </Sequence>
 </Activity>

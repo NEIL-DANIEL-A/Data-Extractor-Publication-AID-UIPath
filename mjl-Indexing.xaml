@@ -166,11 +166,12 @@
           <x:String>Publisher</x:String>
           <x:String>Country</x:String>
           <x:String>Scopus-Result</x:String>
-          <x:String>Column H</x:String>
+          <x:String>Index</x:String>
           <x:String>SJR value</x:String>
           <x:String>Quartile</x:String>
           <x:String>H-Index</x:String>
           <x:String>Coverage</x:String>
+          <x:String>URL</x:String>
         </x:Array>
       </uga:ReadRangeConnections.ColumnNames>
       <uga:ReadRangeConnections.FileIdBackup>
